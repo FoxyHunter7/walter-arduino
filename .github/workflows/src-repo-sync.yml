@@ -3,7 +3,7 @@ name: Sync src folder to walter-esp-idf
 on:
   push:
     branches:
-      - src-cross-repo-sync
+      - main
 
 jobs:
   sync-src:
