@@ -41,7 +41,7 @@ jobs:
           PR_NUMBER=${{ github.event.pull_request.number }}
           PR_LINK="https://github.com/FoxyHunter7/walter-arduino/pull/${PR_NUMBER}"
           COMMIT_MESSAGE="Sync: src from walter-arduino (PR ${PR_LINK}) [skip ci]"
-          COMMIT_DESCRIPTION="PR title: \"${PR_TITLE}\", PR: ${PR_NUMBER}"
+          COMMIT_DESCRIPTION="PR title: \"${PR_TITLE}\", number: ${PR_NUMBER}"
           echo "COMMIT_MESSAGE=$COMMIT_MESSAGE" >> $GITHUB_ENV
           echo "COMMIT_DESCRIPTION=$COMMIT_DESCRIPTION" >> $GITHUB_ENV
 
